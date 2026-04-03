@@ -1,0 +1,766 @@
+ (routes 
+  (resolution mm 100000)
+  (parser
+  )
+  (parser
+  )
+  (structure_out
+   (layer TOP (type signal)
+   )
+   (layer I1 (type signal)
+   )
+   (layer I2 (type signal)
+   )
+   (layer I3 (type signal)
+   )
+   (layer I4 (type signal)
+   )
+   (layer I5 (type signal)
+   )
+   (layer I6 (type signal)
+   )
+   (layer I7 (type signal)
+   )
+   (layer I8 (type signal)
+   )
+   (layer I9 (type signal)
+   )
+   (layer I10 (type signal)
+   )
+   (layer I11 (type signal)
+   )
+   (layer I12 (type signal)
+   )
+   (layer I13 (type signal)
+   )
+   (layer I14 (type signal)
+   )
+   (layer BOT (type signal)
+   )
+  )
+  (library_out
+  (padstack $VIA#0_SIGNAL
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack $VIA#0_POWER
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  (padstack PS8
+   (shape (circ TOP 76200 0 0))
+   (shape (circ I1 76200 0 0))
+   (shape (circ I2 76200 0 0))
+   (shape (circ I3 76200 0 0))
+   (shape (circ I4 76200 0 0))
+   (shape (circ I5 76200 0 0))
+   (shape (circ I6 76200 0 0))
+   (shape (circ I7 76200 0 0))
+   (shape (circ I8 76200 0 0))
+   (shape (circ I9 76200 0 0))
+   (shape (circ I10 76200 0 0))
+   (shape (circ I11 76200 0 0))
+   (shape (circ I12 76200 0 0))
+   (shape (circ I13 76200 0 0))
+   (shape (circ I14 76200 0 0))
+   (shape (circ BOT 76200 0 0))
+  )
+  )
+  (network_out
+   (Net #00000 
+   (rule
+   )
+   (wire (path TOP 25399  -508000 127000 -508000 0 -889000 0)
+    (connect (terminal pin U1-12) (terminal pin CLOCK-0))
+   )
+   (wire (path TOP 25399  -889000 0 -889000 190500 -2032000 190500
+     -2032000 3000)
+    (connect (terminal pin CLOCK-0) (terminal smd "C CLOCK"-1))
+   )
+   )
+   (Net #00001 
+   (rule
+   )
+   (wire (path TOP 25399  -508000 -127000 -762000 -127000 -762000 -254000
+     -1206500 -254000 -1206500 0 -1397000 0)
+    (connect (terminal pin U1-13) (terminal pin CLOCK-1))
+   )
+   (wire (path TOP 25399  -1397000 0 -1714500 0 -1714500 -190500
+     -2603500 -190500 -2603500 0)
+    (connect (terminal pin CLOCK-1) (terminal smd "C CLOCK 2"-1))
+   )
+   )
+   (Net #00043 
+   (rule
+   )
+   (wire (path BOT 25399  1318000 2121000 1143000 2121000 1143000 1270000
+     825500 1270000 825500 508000 1905000 508000 1905000 0)
+    (connect (terminal pin "RELAY ACI"-1) (terminal pin "T ACI"-2))
+   )
+   (wire (path BOT 25399  1905000 0 1905000 -1905000 1397000 -1905000)
+    (connect (terminal pin "T ACI"-2) (terminal pin "D ACID"-0))
+   )
+   )
+   (Net #00047 
+   (rule
+   )
+   (wire (path BOT 25399  1397000 889000 1714500 889000 1714500 698500
+     2159000 698500 2159000 -2095500 3048000 -2095500 3048000 -2540000)
+    (connect (terminal pin "T BASE"-2) (terminal pin "D BASE"-0))
+   )
+   (wire (path BOT 25399  1270000 3137000 1270000 2857500 1651000 2857500
+     1651000 1333500 1397000 1333500 1397000 889000)
+    (connect (terminal pin "RELAY BASE"-1) (terminal pin "T BASE"-2))
+   )
+   )
+   (Net #00051 
+   (rule
+   )
+   (wire (path TOP 25399  -2413000 -317500 -2413000 -698500 -2667000 -698500
+     -2667000 -2794000 -95057 -2794000 -95057 -2476500 1397000 -2476500
+     1397000 -2286000)
+    (connect (terminal via) (terminal pin "D ASP"-0))
+   )
+   (wire (path TOP 25399  -2413000 -317500 -635000 -317500 -635000 -508000
+     1143000 -508000 1143000 -393700 1931881 -393700 1931881 -254000
+     2413000 -254000 2413000 0)
+    (connect (terminal via) (terminal pin "T ASP"-2))
+   )
+   (wire (path BOT 25399  -2667000 3010000 -2667000 2730500 -2336799 2730500
+     -2336799 -44227 -2413000 -44227 -2413000 -317500)
+    (connect (terminal pin "RELAY ASPERSOR"-1) (terminal via))
+   )
+   (via PS8 -2413000 -317500)
+   )
+   (Net #00055 
+   (rule
+   )
+   (wire (path BOT 25399  571500 1778000 571500 254000 1143000 254000
+     1143000 -1143000 1651000 -1143000)
+    (connect (terminal via) (terminal pin "T MSIT"-2))
+   )
+   (wire (path TOP 25399  -2667000 1778000 571500 1778000)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path BOT 25399  -2667000 1994000 -2667000 1778000)
+    (connect (terminal pin "RELAY MISTURADOR"-1) (terminal via))
+   )
+   (wire (path TOP 25399  1651000 -1651000 1651000 -1746250 2603500 -1746250
+     2603500 -1714500 2667000 -1714500 2667000 -1524000)
+    (connect (terminal via) (terminal pin "D MIST"-0))
+   )
+   (wire (path BOT 25399  1651000 -1143000 1651000 -1651000)
+    (connect (terminal pin "T MSIT"-2) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 571500 1778000)
+   (via $VIA#0_SIGNAL -2667000 1778000)
+   (via $VIA#0_SIGNAL 1651000 -1651000)
+   )
+   (Net #00059 
+   (rule
+   )
+   (wire (path TOP 25399  1397000 -2667000 2068164 -2667000 2068164 -2095500
+     2857500 -2095500 2857500 -1333500 3111500 -1333500 3111500 1143000
+     2667000 1143000)
+    (connect (terminal pin "D BOMBA"-0) (terminal pin "T BOMBA"-2))
+   )
+   (wire (path BOT 25399  -817000 -978000 -817000 -2667000 1397000 -2667000)
+    (connect (terminal pin "RELAY BOMBA"-1) (terminal pin "D BOMBA"-0))
+   )
+   )
+   (Net #00063 
+   (rule
+   )
+   (wire (path TOP 25399  825500 -952500 825500 -762000 1206500 -762000
+     1206500 -444500 2667000 -444500 2667000 -635000)
+    (connect (terminal via) (terminal pin "T ESC"-2))
+   )
+   (wire (path BOT 25399  825500 -952500 825500 -1016000 825500 -1206500
+     889000 -1270000 1333500 -1270000 1397000 -1333500 1397000 -1587500)
+    (connect (terminal via) (terminal pin "D ESC"-0))
+    (type protect)
+   )
+   (wire (path BOT 25399  508000 -254000 508000 -635000)
+    (connect (terminal via) (terminal wire))
+   )
+   (wire (path TOP 25399  -2413000 635000 -2413000 698500 -635000 698500
+     -635000 508000 -381000 508000 -381000 -254000 508000 -254000)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path BOT 25399  -2667000 978000 -2667000 698500 -2413000 698500
+     -2413000 635000)
+    (connect (terminal pin "RELAY ESC"-1) (terminal via))
+   )
+   (wire (path BOT 25399  508000 -635000 508000 -889000 825500 -889000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 25399  825500 -889000 825500 -952500)
+    (connect (terminal wire) (terminal via))
+    (type protect)
+   )
+   (via $VIA#0_SIGNAL 825500 -952500)
+   (via $VIA#0_SIGNAL 508000 -254000)
+   (via $VIA#0_SIGNAL -2413000 635000)
+   )
+   (Net #00085 
+   (rule
+   )
+   (wire (path TOP 25399  -2286000 3302000 -2286000 3365500 3619500 3365500
+     3619500 1651000 3429000 1651000)
+    (connect (terminal via) (terminal pin J2-1))
+   )
+   (wire (path BOT 25399  -2667000 -508000 -2286000 -508000 -2286000 3302000)
+    (connect (terminal pin "RELAY BOMBA"-3) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -2286000 3302000)
+   )
+   (Net #00086 
+   (rule
+   )
+   (wire (path BOT 25399  2984500 1270000 3175000 1270000 3175000 889000
+     3429000 889000)
+    (connect (terminal via) (terminal pin J3-1))
+   )
+   (wire (path TOP 25399  -825500 1270000 1143000 1270000 1143000 1333500
+     2984500 1333500 2984500 1270000)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path BOT 25399  -817000 508000 -817000 1270000 -825500 1270000)
+    (connect (terminal pin "RELAY ESC"-3) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 2984500 1270000)
+   (via $VIA#0_SIGNAL -825500 1270000)
+   )
+   (Net #00087 
+   (rule
+   )
+   (wire (path BOT 25399  3168000 1651000 3168000 1905000 3429000 1905000)
+    (connect (terminal pin "RELAY ACI"-3) (terminal pin J4-1))
+   )
+   )
+   (Net #00088 
+   (rule
+   )
+   (wire (path BOT 25399  3120000 2667000 3120000 3175000 3429000 3175000)
+    (connect (terminal pin "RELAY BASE"-3) (terminal pin J5-1))
+   )
+   )
+   (Net #00089 
+   (rule
+   )
+   (wire (path TOP 25399  -817000 2540000 -817000 2286000 1143000 2286000
+     1143000 2413000 3436000 2413000)
+    (connect (terminal pin "RELAY ASPERSOR"-3) (terminal pin J6-1))
+   )
+   )
+   (Net #00090 
+   (rule
+   )
+   (wire (path BOT 25399  2857500 1841500 2857500 1079500 3111500 1079500
+     3111500 635000 3429000 635000)
+    (connect (terminal via) (terminal pin J7-1))
+   )
+   (wire (path TOP 25399  -571500 1524000 762000 1524000 762000 1778000
+     1143000 1778000 1143000 1841500 2857500 1841500)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path BOT 25399  -817000 1524000 -571500 1524000)
+    (connect (terminal pin "RELAY MISTURADOR"-3) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 2857500 1841500)
+   (via $VIA#0_SIGNAL -571500 1524000)
+   )
+   (Net #00095 
+   (rule
+   )
+   (wire (path BOT 25399  3429000 2159000 3619500 2159000 3619500 2667000
+     3436000 2667000)
+    (connect (terminal pin J4-0) (terminal pin J6-0))
+   )
+   (wire (path BOT 25399  3436000 2667000 3429000 2667000 3429000 2921000)
+    (connect (terminal pin J6-0) (terminal pin J5-0))
+   )
+   (wire (path BOT 25399  3429000 1397000 2984500 1397000 2984500 2159000
+     3429000 2159000)
+    (connect (terminal pin J2-0) (terminal pin J4-0))
+   )
+   (wire (path BOT 25399  3429000 1143000 3619500 1143000 3619500 381000
+     3429000 381000)
+    (connect (terminal pin J3-0) (terminal pin J7-0))
+   )
+   (wire (path BOT 25399  3429000 1397000 3429000 1143000)
+    (connect (terminal pin J2-0) (terminal pin J3-0))
+   )
+   )
+   (Net ACIDO 
+   (rule
+   )
+   (wire (path TOP 25399  -508000 -381000 825500 -381000 825500 -254000
+     1651000 -254000)
+    (connect (terminal pin U1-14) (terminal pin "T ACI"-1))
+   )
+   )
+   (Net ASPERSOR 
+   (rule
+   )
+   (wire (path BOT 25399  2349500 -952500 2349500 -254000 2667000 -254000
+     2667000 254000)
+    (connect (terminal via) (terminal pin "T ASP"-1))
+   )
+   (wire (path TOP 25399  1016000 -1016000 1206500 -1016000 1206500 -1295747
+     2222500 -1295747 2222500 -952500 2349500 -952500)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path BOT 25399  1016000 -1143000 1016000 -1016000)
+    (connect (terminal pin U1-22) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 2349500 -952500)
+   (via $VIA#0_SIGNAL 1016000 -1016000)
+   )
+   (Net BASE 
+   (rule
+   )
+   (wire (path TOP 25399  -254000 1016000 1143000 1016000 1143000 1143000
+     1651000 1143000)
+    (connect (terminal via) (terminal pin "T BASE"-1))
+   )
+   (wire (path BOT 25399  -508000 -635000 -381000 -635000 -381000 1016000
+     -254000 1016000)
+    (connect (terminal pin U1-15) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -254000 1016000)
+   )
+   (Net "BOMBA RIO" 
+   (rule
+   )
+   (wire (path TOP 25399  -127000 508000 2095500 508000 2095500 889000
+     2921000 889000)
+    (connect (terminal via) (terminal pin "T BOMBA"-1))
+   )
+   (wire (path BOT 25399  -508000 -889000 -127000 -889000 -127000 508000)
+    (connect (terminal pin U1-16) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -127000 508000)
+   )
+   (Net D4 
+   (rule
+   )
+   (wire (path BOT 25399  1016000 -127000 0 -127000 0 -1841500
+     -520700 -1841500 -520700 -2476500 381000 -2476500 381000 -2286000)
+    (connect (terminal pin U1-26) (terminal pin LCD1-10))
+   )
+   )
+   (Net D5 
+   (rule
+   )
+   (wire (path BOT 25399  1016000 127000 -63500 127000 -63500 -1778000
+     -571500 -1778000 -571500 -2540000 635000 -2540000 635000 -2286000)
+    (connect (terminal pin U1-27) (terminal pin LCD1-11))
+   )
+   )
+   (Net D6 
+   (rule
+   )
+   (wire (path BOT 25399  -254000 381000 -254000 -762000 -635000 -762000
+     -635000 -2603500 889000 -2603500 889000 -2286000)
+    (connect (terminal via) (terminal pin LCD1-12))
+   )
+   (wire (path TOP 25399  889000 381000 -254000 381000)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path BOT 25399  1016000 381000 889000 381000)
+    (connect (terminal pin U1-28) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -254000 381000)
+   (via $VIA#0_SIGNAL 889000 381000)
+   )
+   (Net D7 
+   (rule
+   )
+   (wire (path BOT 25399  1016000 635000 2095500 635000 2095500 -2476500
+     1143000 -2476500 1143000 -2286000)
+    (connect (terminal pin U1-29) (terminal pin LCD1-13))
+   )
+   )
+   (Net E 
+   (rule
+   )
+   (wire (path BOT 25399  1016000 -1397000 63500 -1397000 63500 -1892299
+     -38098 -1892299 -38098 -2032000 -127000 -2032000)
+    (connect (terminal pin U1-21) (terminal pin LCD1-5))
+   )
+   )
+   (Net ESCOAMENTO 
+   (rule
+   )
+   (wire (path TOP 25399  2921000 -889000 2476500 -889000 2476500 -1397000
+     1143000 -1397000 1143000 -1270000 -254000 -1270000 -254000 -1143000
+     -508000 -1143000)
+    (connect (terminal pin "T ESC"-1) (terminal pin U1-17))
+   )
+   )
+   (Net GND 
+   (rule
+   )
+   (wire (path TOP 25399  -1517000 508000 -2423500 508000 -2423500 0)
+    (connect (terminal pin "RELAY ESC"-2) (terminal smd "C CLOCK 2"-0))
+   )
+   (wire (path BOT 25399  2667000 635000 2667000 444500 3175000 444500
+     3175000 127000 3429000 127000)
+    (connect (terminal pin "T BOMBA"-0) (terminal pin J8-0))
+   )
+   (wire (path TOP 25399  -1905000 -1841500 -698500 -1841500 -698500 -2032000
+     -381000 -2032000)
+    (connect (terminal via) (terminal pin LCD1-6))
+   )
+   (wire (path BOT 25399  3429000 -889000 3111500 -889000 3111500 -1143000
+     2667000 -1143000)
+    (connect (terminal pin J11-0) (terminal pin "T ESC"-0))
+   )
+   (wire (path BOT 25399  3429000 -381000 2921000 -381000 2921000 0)
+    (connect (terminal pin J9-0) (terminal pin "T ASP"-0))
+   )
+   (wire (path BOT 25399  1651000 -635000 1397000 -635000 1397000 0)
+    (connect (terminal pin "T MSIT"-0) (terminal pin "T ACI"-0))
+   )
+   (wire (path TOP 25399  2413000 1016000 2159000 1016000 2159000 1079500
+     1905000 1079500 1905000 889000)
+    (connect (terminal via) (terminal pin "T BASE"-0))
+   )
+   (wire (path BOT 25399  2413000 1016000 2413000 1143000)
+    (connect (terminal via) (terminal wire))
+   )
+   (wire (path TOP 25399  -508000 381000 -508000 254000 -1206500 254000
+     -1206500 508000 -1517000 508000)
+    (connect (terminal pin U1-11) (terminal pin "RELAY ESC"-2))
+   )
+   (wire (path BOT 25399  3429000 127000 3619500 127000 3619500 -330201)
+    (connect (terminal pin J8-0) (terminal wire))
+   )
+   (wire (path TOP 25399  -1905000 -1841500 -1905000 -2032000 -2413000 -2032000)
+    (connect (terminal via) (terminal pin "S UMIDAD"-0))
+   )
+   (wire (path BOT 25399  2468000 1651000 2468000 1968500 2420000 1968500
+     2420000 2667000)
+    (connect (terminal pin "RELAY ACI"-2) (terminal pin "RELAY BASE"-2))
+   )
+   (wire (path BOT 25399  2413000 1143000 2413000 1397000 2468000 1397000
+     2468000 1651000)
+    (connect (terminal wire) (terminal pin "RELAY ACI"-2))
+   )
+   (wire (path BOT 25399  -1968500 -1524000 -1968500 -1714500 -1905000 -1714500
+     -1905000 -1841500)
+    (connect (terminal wire) (terminal via))
+   )
+   (wire (path BOT 25399  1651000 -635000 1651000 -952500 1841500 -952500
+     1841500 -1746250 1193799 -1746250 1193799 -2032000 1143000 -2032000)
+    (connect (terminal pin "T MSIT"-0) (terminal pin LCD1-0))
+   )
+   (wire (path BOT 25399  3619500 -838201 3429000 -838201 3429000 -889000)
+    (connect (terminal wire) (terminal pin J11-0))
+   )
+   (wire (path BOT 25399  3619500 -330201 3429000 -330201 3429000 -381000)
+    (connect (terminal wire) (terminal pin J9-0))
+   )
+   (wire (path TOP 25399  -2423500 0 -2423500 -127000 -1852000 -127000
+     -1852000 3000)
+    (connect (terminal smd "C CLOCK 2"-0) (terminal smd "C CLOCK"-0))
+   )
+   (wire (path BOT 25399  -1517000 2540000 -1517000 1524000)
+    (connect (terminal pin "RELAY ASPERSOR"-2) (terminal pin "RELAY MISTURADOR"-2))
+   )
+   (wire (path BOT 25399  -1517000 1524000 -1517000 508000)
+    (connect (terminal pin "RELAY MISTURADOR"-2) (terminal pin "RELAY ESC"-2))
+   )
+   (wire (path TOP 25399  1905000 889000 1587500 889000 1587500 698500
+     1143000 698500 1143000 889000 1016000 889000)
+    (connect (terminal pin "T BASE"-0) (terminal pin U1-30))
+   )
+   (wire (path BOT 25399  3619500 -330201 3619500 -838201)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 25399  3619500 -1333500 3619500 -1905000 3429000 -1905000)
+    (connect (terminal wire) (terminal pin J1-1))
+   )
+   (wire (path BOT 25399  3619500 -1333500 3619500 -1346201 3429000 -1346201
+     3429000 -1397000)
+    (connect (terminal wire) (terminal pin J10-0))
+   )
+   (wire (path BOT 25399  3619500 -838201 3619500 -1333500)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 25399  2413000 190500 2413000 635000)
+    (connect (terminal via) (terminal wire))
+   )
+   (wire (path TOP 25399  1587500 0 1587500 190500 2413000 190500)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path BOT 25399  1397000 0 1587500 0)
+    (connect (terminal pin "T ACI"-0) (terminal via))
+   )
+   (wire (path BOT 25399  2413000 635000 2667000 635000)
+    (connect (terminal wire) (terminal pin "T BOMBA"-0))
+   )
+   (wire (path BOT 25399  -381000 -2032000 -381000 -2286000)
+    (connect (terminal pin LCD1-6) (terminal pin LCD1-7))
+   )
+   (wire (path BOT 25399  -381000 -2286000 -381000 -2285999 -127000 -2285999
+     -127000 -2286000)
+    (connect (terminal pin LCD1-7) (terminal pin LCD1-8))
+   )
+   (wire (path BOT 25399  -127000 -2286000 -127000 -2285999 127000 -2285999
+     127000 -2286000)
+    (connect (terminal pin LCD1-8) (terminal pin LCD1-9))
+   )
+   (wire (path BOT 25399  127000 -2286000 127000 -2032000)
+    (connect (terminal pin LCD1-9) (terminal pin LCD1-4))
+   )
+   (wire (path BOT 25399  127000 -2032000 127000 -1524000 1143000 -1524000
+     1143000 -2032000)
+    (connect (terminal pin LCD1-4) (terminal pin LCD1-0))
+   )
+   (wire (path BOT 25399  2413000 635000 2413000 1016000)
+    (connect (terminal wire) (terminal via))
+   )
+   (wire (path BOT 25399  -1517000 508000 -1967000 58000 -1967000 -508000)
+    (connect (terminal pin "RELAY ESC"-2) (terminal pin "RELAY BOMBA"-2))
+   )
+   (wire (path BOT 25399  -2413000 -2032000 -2413000 -1841500 -2413000 -1397000)
+    (connect (terminal pin "S PH"-0) (terminal pin "S UMIDAD"-0))
+    (type protect)
+   )
+   (wire (path BOT 25399  -1967000 -508000 -1967000 -762000 -1968500 -763500
+     -1968500 -889000)
+    (connect (terminal pin "RELAY BOMBA"-2) (terminal wire))
+    (type protect)
+    (attr fanout)
+   )
+   (wire (path BOT 25399  -1968500 -1524000 -1841500 -1524000)
+    (connect (terminal wire) (terminal wire))
+    (type protect)
+    (attr fanout)
+   )
+   (wire (path BOT 25399  -1968500 -889000 -1968500 -1143000 -1968500 -1397000)
+    (connect (terminal wire) (terminal wire))
+    (type protect)
+    (attr fanout)
+   )
+   (wire (path BOT 25399  -1968500 -1460500 -1968500 -1524000)
+    (connect (terminal wire) (terminal wire))
+    (attr fanout)
+   )
+   (wire (path BOT 25399  -1968500 -1397000 -1968500 -1460500)
+    (connect (terminal wire) (terminal wire))
+    (attr fanout)
+   )
+   (via $VIA#0_POWER 2413000 1016000)
+   (via $VIA#0_POWER -1905000 -1841500)
+   (via $VIA#0_POWER 2413000 190500)
+   (via $VIA#0_POWER 1587500 0)
+   )
+   (Net IRRIGACAO 
+   (rule
+   )
+   (wire (path TOP 25399  1016000 1397000 3175000 1397000 3175000 -1143000
+     3429000 -1143000)
+    (connect (terminal pin U1-32) (terminal pin J11-1))
+   )
+   )
+   (Net MISTURADOR 
+   (rule
+   )
+   (wire (path TOP 25399  1016000 -889000 1397000 -889000)
+    (connect (terminal pin U1-23) (terminal pin "T MSIT"-1))
+   )
+   )
+   (Net NIVEL 
+   (rule
+   )
+   (wire (path BOT 25399  1016000 2921000 825500 2921000 825500 3365500
+     2222500 3365500 2222500 -1333500 3238500 -1333500 3238500 -1651000
+     3429000 -1651000)
+    (connect (terminal pin U1-38) (terminal pin J10-1))
+   )
+   )
+   (Net NIVELA 
+   (rule
+   )
+   (wire (path TOP 25399  1016000 1651000 1143000 1651000 1143000 1460500
+     3238500 1460500 3238500 -635000 3429000 -635000)
+    (connect (terminal pin U1-33) (terminal pin J9-1))
+   )
+   )
+   (Net NIVELA2 
+   (rule
+   )
+   (wire (path BOT 25399  2857500 190500 3111500 190500 3111500 -127000
+     3429000 -127000)
+    (connect (terminal via) (terminal pin J8-1))
+   )
+   (wire (path TOP 25399  444500 254000 1143000 254000 1143000 444500
+     2857500 444500 2857500 190500)
+    (connect (terminal via) (terminal via))
+   )
+   (wire (path BOT 25399  1016000 2413000 444500 2413000 444500 254000)
+    (connect (terminal pin U1-36) (terminal via))
+   )
+   (via $VIA#0_SIGNAL 2857500 190500)
+   (via $VIA#0_SIGNAL 444500 254000)
+   )
+   (Net PH 
+   (rule
+   )
+   (wire (path BOT 25399  -508000 2667000 -635000 2667000 -635000 2349500
+     -1333500 2349500 -1333500 190500 -1651000 190500 -1651000 -1651000)
+    (connect (terminal pin U1-2) (terminal pin "S PH"-2))
+   )
+   )
+   (Net RESET 
+   (rule
+   )
+   (wire (path TOP 25399  -1460500 -2476500 -1724000 -2476500 -1724000 -2667000)
+    (connect (terminal via) (terminal smd "RESISTIR RST"-1))
+   )
+   (wire (path BOT 25399  -508000 3175000 -317500 3175000 -317500 2286000
+     -1206500 2286000 -1206500 -317500 -1460500 -317500 -1460500 -2476500)
+    (connect (terminal pin U1-0) (terminal via))
+   )
+   (via $VIA#0_SIGNAL -1460500 -2476500)
+   )
+   (Net RS 
+   (rule
+   )
+   (wire (path BOT 25399  1016000 -1651000 381000 -1651000 381000 -2032000)
+    (connect (terminal pin U1-20) (terminal pin LCD1-3))
+   )
+   )
+   (Net UMIDADE 
+   (rule
+   )
+   (wire (path BOT 25399  -508000 2921000 -2159000 2921000 -2159000 -1968500
+     -1651000 -1968500 -1651000 -2286000)
+    (connect (terminal pin U1-1) (terminal pin "S UMIDAD"-2))
+   )
+   )
+   (Net VCC/VDD 
+   (rule
+   )
+   (wire (path BOT 25399  -508000 635000 -635000 635000 -635000 -190500
+     -817000 -190500 -817000 -508000)
+    (connect (terminal pin U1-10) (terminal pin "RELAY BOMBA"-0))
+   )
+   (wire (path TOP 25399  -2667000 1524000 -2667000 1206500 -2413000 1206500
+     -2413000 762000 -2667000 762000 -2667000 508000)
+    (connect (terminal pin "RELAY MISTURADOR"-0) (terminal pin "RELAY ESC"-0))
+   )
+   (wire (path TOP 25399  -2159000 1016000 -2159000 1524000 -2667000 1524000)
+    (connect (terminal wire) (terminal pin "RELAY MISTURADOR"-0))
+   )
+   (wire (path TOP 25399  -1143000 -2032000 -1143000 -2667000 -1524000 -2667000)
+    (connect (terminal pin "S UMIDAD"-1) (terminal smd "RESISTIR RST"-0))
+   )
+   (wire (path TOP 25399  2413000 -1905000 1587500 -1905000 1587500 -1746250
+     1143000 -1746250 1143000 -1778000 889000 -1778000)
+    (connect (terminal pin "D ACID"-1) (terminal wire))
+   )
+   (wire (path TOP 25399  889000 -1778000 889000 -2032000)
+    (connect (terminal wire) (terminal pin LCD1-1))
+   )
+   (wire (path TOP 25399  1016000 1143000 -381000 1143000 -381000 1016000)
+    (connect (terminal pin U1-31) (terminal wire))
+   )
+   (wire (path BOT 25399  1016000 1143000 1318000 1143000 1318000 1651000)
+    (connect (terminal pin U1-31) (terminal pin "RELAY ACI"-0))
+   )
+   (wire (path BOT 25399  3429000 -2159000 3238500 -2159000 3238500 -1905000
+     3048000 -1905000)
+    (connect (terminal pin J1-0) (terminal wire))
+   )
+   (wire (path BOT 25399  -1079500 -508000 -1143000 -508000 -1143000 -1397000)
+    (connect (terminal wire) (terminal pin "S PH"-1))
+   )
+   (wire (path BOT 25399  1318000 1651000 1524000 1651000 1524000 2349500
+     1270000 2349500 1270000 2667000)
+    (connect (terminal pin "RELAY ACI"-0) (terminal pin "RELAY BASE"-0))
+   )
+   (wire (path TOP 25399  -508000 635000 -381000 635000 -381000 1016000)
+    (connect (terminal pin U1-10) (terminal wire))
+   )
+   (wire (path BOT 25399  -2667000 2540000 -2667000 2222500 -2476500 2222500
+     -2476500 1524000 -2667000 1524000)
+    (connect (terminal pin "RELAY ASPERSOR"-0) (terminal pin "RELAY MISTURADOR"-0))
+   )
+   (wire (path BOT 25399  3048000 -1905000 2413000 -1905000)
+    (connect (terminal wire) (terminal pin "D ACID"-1))
+   )
+   (wire (path BOT 25399  3048000 -1905000 3048000 -1524000)
+    (connect (terminal wire) (terminal pin "D BASE"-1))
+   )
+   (wire (path BOT 25399  2413000 -2286000 2413000 -2667000)
+    (connect (terminal pin "D ASP"-1) (terminal pin "D BOMBA"-1))
+   )
+   (wire (path TOP 25399  -1143000 -1397000 -1143000 -1524000 889000 -1524000
+     889000 -1778000)
+    (connect (terminal pin "S PH"-1) (terminal wire))
+   )
+   (wire (path TOP 25399  -2159000 1016000 -381000 1016000)
+    (connect (terminal wire) (terminal wire))
+   )
+   (wire (path BOT 25399  2413000 -1587500 2413000 -1905000)
+    (connect (terminal pin "D ESC"-1) (terminal pin "D ACID"-1))
+    (type protect)
+   )
+   (wire (path BOT 25399  -817000 -508000 -1079500 -508000)
+    (connect (terminal pin "RELAY BOMBA"-0) (terminal wire))
+    (type protect)
+   )
+   (wire (path BOT 25399  -1143000 -1397000 -1270000 -1397000 -1397000 -1397000
+     -1397000 -2032000)
+    (connect (terminal pin "S PH"-1) (terminal wire))
+    (type protect)
+   )
+   (wire (path BOT 25399  -1397000 -2032000 -1143000 -2032000)
+    (connect (terminal wire) (terminal pin "S UMIDAD"-1))
+    (type protect)
+   )
+   (wire (path BOT 25399  3429000 -2159000 3429000 -2667000 3365500 -2730500
+     2857500 -2730500 2667000 -2540000)
+    (connect (terminal pin J1-0) (terminal pin "D MIST"-1))
+    (type protect)
+   )
+   (wire (path BOT 25399  2667000 -2540000 2667000 -2349500 2603500 -2286000
+     2413000 -2286000)
+    (connect (terminal pin "D MIST"-1) (terminal pin "D ASP"-1))
+    (type protect)
+   )
+   )
+  )
+ )
